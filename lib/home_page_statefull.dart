@@ -19,18 +19,21 @@ class HomePageStatefulState extends State<HomePageStatefull> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: Column(
-        children: [
-          Text(texto),
-          TextButton(
-            onPressed: () {
-              setState(() {
-                texto = 'Alterei o texto do Statefull';
-              });
-            },
-            child: Text('Alterar texto'),
-          )
-        ],
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(texto),
+            TextButton(
+              onPressed: () {
+                setState(() {
+                  texto = 'Alterei o texto do Statefull';
+                });
+              },
+              child: Text('Alterar texto'),
+            )
+          ],
+        ),
       ),
     );
     throw UnimplementedError();

@@ -8,16 +8,19 @@ class HomePageStateles extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: Column(
-        children: [
-          Text(texto),
-          TextButton(
-            onPressed: () {
-              texto = 'Alterei o texto';
-            },
-            child: Text(texto),
-          )
-        ],
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(texto),
+            TextButton(
+              onPressed: () {
+                texto = 'Alterei o texto';
+              },
+              child: Text(texto),
+            )
+          ],
+        ),
       ),
     );
   }
